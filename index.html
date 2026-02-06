@@ -36,15 +36,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 8px; /* Slightly tighter gap for bigger photos */
-            padding: 50px 5px; /* More vertical space */
+            gap: 10px;
+            padding: 50px 5px;
             width: 100%;
             box-sizing: border-box;
         }
 
         .photo-card {
             background: white;
-            padding: 8px 8px 22px 8px; /* Slightly thicker polaroid border */
+            /* Reduced and equalized padding for a cleaner look */
+            padding: 8px 8px 25px 8px; 
             box-shadow: 0 12px 30px rgba(0,0,0,0.6);
             border-radius: 2px;
             transition: 0.3s;
@@ -59,15 +60,19 @@
             display: block; 
         }
 
-        /* Increased Widths for Mobile Presence */
+        /* Adjusts the specific image inside the right card to move slightly right */
+        .right-card img {
+            object-position: 65% center; /* Moves the focus of the image to the right */
+        }
+
         .left-card, .right-card { 
-            width: 37%; /* Increased from 32% */
+            width: 37%; 
             max-width: 160px;
             aspect-ratio: 4 / 3; 
         }
 
         .center-card { 
-            width: 32%; /* Increased from 28% */
+            width: 32%; 
             max-width: 140px;
             aspect-ratio: 2 / 3; 
             z-index: 2;
