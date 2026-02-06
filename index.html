@@ -36,7 +36,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             padding: 50px 5px;
             width: 100%;
             box-sizing: border-box;
@@ -44,8 +44,8 @@
 
         .photo-card {
             background: white;
-            /* Reduced and equalized padding for a cleaner look */
-            padding: 8px 8px 25px 8px; 
+            /* Equal padding for all photos */
+            padding: 8px 8px 22px 8px; 
             box-shadow: 0 12px 30px rgba(0,0,0,0.6);
             border-radius: 2px;
             transition: 0.3s;
@@ -60,9 +60,9 @@
             display: block; 
         }
 
-        /* Adjusts the specific image inside the right card to move slightly right */
+        /* Shift sajs3 image content to the right */
         .right-card img {
-            object-position: 65% center; /* Moves the focus of the image to the right */
+            object-position: 20% center; 
         }
 
         .left-card, .right-card { 
@@ -210,4 +210,3 @@
     </script>
 </body>
 </html>
-
